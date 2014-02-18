@@ -134,15 +134,15 @@ program `hexedit` which is a program designed for manipulation of binary data. T
 (distance) from the beginning of the file and is written in hexadecimal (a number format like 1-9 that better describes binary data). This is followed by several hexadecimal columns
 grouped into four to represent each group of four bytes. The last column shows the binary data interpreted as text, the uninterpretable data is left as a full stop. The meaning of this
 document will probably be unintelligable, because it is. Binary filetypes such as this are ususally very difficult to understand unless you have the specification which defines the format and
-how it is read and a program that implements it. Nowadays, Microsoft has moved on from the XLS format to newer, XML based formats like .xlsx and .xml.
+how it is read and a program that implements it. Nowadays, Microsoft has moved on from the XLS format to newer, XML based formats like `.xlsx` and `.xml`.
 
 The second document does not require any extra display to show, since it is just text. Even the technically inept, given some time will notice that the document is composed of
 a title and then a series of rows, where columns are separated by commas. That is all there is to the CSV format -- CSV stands for 'comma separated values'. The format
 is instantly identifiable with no context or explanation, and simple to express programatically.
 
-Perhaps you already knew that XML is a text-based format, perhaps, then you might ask "Why CSV over XLSX?". First: though the XML in the XLSX is text-based, the .xlsx file
+Perhaps you already knew that XML is a text-based format, perhaps, then you might ask "Why CSV over XLSX?". First: though the XML in the XLSX is text-based, the `.xlsx` file
 you find on your hard drive is not readable by a text editor such as Notepad, attempting to open it with Notepad will present you with a mess of symbols. This is because
-the file is a .zip file (a binary, compressed format) containing several files which are /themselves/ XML, here is a list of the files inside of the same FCO document in XLSX:
+the file is a `.zip` file (a binary, compressed format) containing several files which are /themselves/ XML, here is a list of the files inside of the same FCO document in XLSX:
 
 =======
 " zip.vim version v27
