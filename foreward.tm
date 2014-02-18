@@ -140,9 +140,9 @@ The second document does not require any extra display to show, since it is just
 a title and then a series of rows, where columns are separated by commas. That is all there is to the CSV format -- CSV stands for 'comma separated values'. The format
 is instantly identifiable with no context or explanation, and simple to express programatically.
 
-Perhaps you already knew that XML is a text-based format, perhaps, then you might ask "Why CSV over XLSX?" first, though the XML in the XLSX is text-based, the .xlsx file
+Perhaps you already knew that XML is a text-based format, perhaps, then you might ask "Why CSV over XLSX?". First: though the XML in the XLSX is text-based, the .xlsx file
 you find on your hard drive is not readable by a text editor such as Notepad, attempting to open it with Notepad will present you with a mess of symbols. This is because
-the file is a .zip file containing several files which are themselves XML, here is a list of the files inside of the same FCO document in XLSX:
+the file is a .zip file (a binary, compressed format) containing several files which are /themselves/ XML, here is a list of the files inside of the same FCO document in XLSX:
 
 =======
 " zip.vim version v27
@@ -171,5 +171,5 @@ Opening sheet1.xml presents us with XML data, which looks like this:
 Part of the XML description of [FCO Energy Consumption] (http://data.gov.uk/dataset/fco-energy-consumption) (plaintext)
 
 Though XLSX contains text-based files, the format is anything but simple and additionally contains non-data information that is specific to the XLS format such as text colour,
-formulas and worksheets that must be separated from the important data. In addition, the XML format is complex to describe, and as such requires use of an XML library,
-though this is not a huge problem. Simple, expressive XML can also make good data.
+formulas and worksheets that must be separated from the important data; you can observe these in all the files other than workbook.xml, which contain such 'metadata' -- data concering the data.
+In addition, the XML format is complex to describe, and as such requires use of an XML library, though this is not a huge problem. Simple, expressive XML can also make good data.
